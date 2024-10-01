@@ -17,6 +17,8 @@ class Pet(models.Model):
         "groups.Group",
         on_delete=models.PROTECT,
         related_name="pets",
+        blank=True,
+        null=True,
     )
 
     traits = models.ManyToManyField("traits.Trait", related_name="traits")
