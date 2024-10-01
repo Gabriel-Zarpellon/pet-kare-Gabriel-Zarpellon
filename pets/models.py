@@ -19,4 +19,4 @@ class Pet(models.Model):
         related_name="pets",
     )
 
-    traits = models.ManyToManyField("traits.Trait", related_name="pet")
+    traits = models.ManyToManyField("traits.Trait", related_name="traits")
